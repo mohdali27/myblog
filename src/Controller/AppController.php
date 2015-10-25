@@ -43,6 +43,24 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+		$this->loadComponent('Auth', [
+            'loginRedirect' => [
+                'controller' => 'Users',
+                'action' => 'index'
+            ],
+            'logoutRedirect' => [
+                'controller' => 'Users',
+                'action' => 'login'
+            ],
+			'authenticate' => [
+				'Form' => [
+					'fields' => ['username' => 'email','password'=>'password'],
+					'passwordHasher' => [
+                    'className' => 'Legacy',
+					]
+				]
+			]
+        ]);
     }
 
     /**
@@ -58,5 +76,6 @@ class AppController extends Controller
         ) {
             $this->set('_serialize', true);
         }
+		//$this->Auth->allow(['index', 'view', 'display']);
     }
 }

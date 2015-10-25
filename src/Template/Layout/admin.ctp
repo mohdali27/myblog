@@ -31,7 +31,7 @@
 	</div>
     <!-- /#wrapper -->
     <!-- jQuery -->
-	<?php echo $this->Html->script(['admin/js/jquery.js', 'js/bootstrap.min.js', 'admin/js/plugins/morris/raphael.min.js','admin/js/plugins/morris/morris.min.js','admin/js/plugins/morris/morris-data.js']);?>
+	<?php echo $this->Html->script(['admin/js/jquery.js', 'admin/js/bootstrap.min.js', 'admin/js/plugins/morris/raphael.min.js','admin/js/plugins/morris/morris.min.js','admin/js/plugins/morris/morris-data.js']);?>
 
 </body>
 

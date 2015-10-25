@@ -6,6 +6,7 @@
                         <h3 class="panel-title">Please Sign In</h3>
                     </div>
                     <div class="panel-body">
+					<?= $this->Flash->render('auth') ?>
                         <?= $this->Form->create() ?>
                             <fieldset>
 								<?=

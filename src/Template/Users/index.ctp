@@ -108,7 +108,17 @@
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+							<?=$this->Html->link(
+								'<i class="fa fa-fw fa-power-off"></i> Log Out',
+									[
+										'controller'=>'users',
+										'action'=>'logout'
+										
+									],
+									[
+										'escape'=>false  
+									]
+							);?>
                         </li>
                     </ul>
                 </li>
