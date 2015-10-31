@@ -1530,3 +1530,47 @@ Stack Trace:
 #2 {main}
 
 
+2015-10-31 18:04:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Request URL: /myblog/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\myblog\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-31 18:07:34 Error: Fatal Error (1): Class 'App\Controller\AppController' not found in [C:\xampp\htdocs\myblog\src\Controller\PagesController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-31 18:07:34 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\AppController' not found
+Request URL: /myblog/
+Stack Trace:
+#0 C:\xampp\htdocs\myblog\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', 'C:\\xampp\\htdocs...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-31 18:13:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Forms.html could not be found.
+Request URL: /myblog/admin/forms.html
+Stack Trace:
+#0 C:\xampp\htdocs\myblog\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-31 18:44:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Admin could not be found.
+Request URL: /myblog/admin
+Stack Trace:
+#0 C:\xampp\htdocs\myblog\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-31 18:44:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Admin could not be found.
+Request URL: /myblog/admin
+Stack Trace:
+#0 C:\xampp\htdocs\myblog\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+

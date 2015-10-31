@@ -12,7 +12,7 @@
  * @since     0.2.9
  * @license   http://www.opensource.org/licenses/mit-license.php MIT License
  */
-namespace App\Controller;
+namespace App\Controller\Admin;
 
 use Cake\Controller\Controller;
 use Cake\Event\Event;
@@ -52,6 +52,7 @@ class AppController extends Controller
                 'controller' => 'Users',
                 'action' => 'login'
             ],
+			// 'authError' => 'Did you really think you are allowed to see that?',
 			'authenticate' => [
 				'Form' => [
 					'fields' => ['username' => 'email','password'=>'password'],

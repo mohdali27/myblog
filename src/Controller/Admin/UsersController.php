@@ -1,5 +1,5 @@
 <?php
-namespace App\Controller;
+namespace App\Controller\Admin;
 use Cake\Core\Configure;
 use Cake\Network\Exception\NotFoundException;
 use Cake\View\Exception\MissingTemplateException;
@@ -20,6 +20,10 @@ class UsersController extends AppController{
 				return $this->redirect($this->Auth->redirectUrl());
 			}
 			$this->Flash->error(__('Invalid username or password, try again'));
+		}
+		
+		if($this->Auth->user()){
+			return $this->redirect($this->Auth->redirectUrl());
 		}
     }
 	
